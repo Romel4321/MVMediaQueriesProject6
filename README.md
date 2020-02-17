@@ -1,32 +1,36 @@
 
-Design Teardown-Project5
+Media Queries-Project6
 
-This assignment consists of making a design teardown and heatmap of a content page from Smashing Magazine. The page was built using a combination of floats, CSS flexbox and  CSS grids techniques.
+This assignment consists of making a responsive web page  from the site The Next Web (https://thenextweb.com/). The page was built using a combination of CSS grids, CSS flexbox and floats techniques.
 
 The guidelines from the Microverse curriculum, as well as The Odin Project were used for this project.
 
-The HTML was validated with W3C validation checker and the CSS styling was verified locally using a CSS stylelinter. All errors were corrected. 
+The HTML was validated with W3C validation checker and the CSS styling was verified locally using a CSS stylelinter. All errors were corrected.
 
-# Smashing-Magazine-Clone
-Project: Design Teardown
+# The Next Web- ResponsiveClone
+Project: Media Queries
 
+The clone was made with the following breakpoints.
+
+The screen sizes used were the default responive screen sizes as taken from google Chrome Developer Browser.
+
+Mobile S 320 X 708 (Portrait Mode)
+Tablet 768  X 708 (Portrait Mode)
+Laptop 1024 X 708 (Portrait Mode)
+ 
 ## BUILT WITH
-*  HTML
-*  CSS
+*  HTML 5
+*  CSS 4
 ***
- ![Example](https://web.archive.org/web/20170628134444/http://www.vanseodesign.com/blog/wp-content/uploads/2009/12/visual-hierarchy-compared.png)
-
+ ![Example](https://thenextweb.com/)
+ 
+ 
 ### Sample Page
-https://web.archive.org/web/20170628134444/http://www.vanseodesign.com/blog/wp-content/uploads/2009/12/visual-hierarchy-compared.png 
+https://thenextweb.com/
 
 ### Live Demo 
  [Smashing-Magazine-Clone] https://laguna1.github.io/Smashing-Magazine-Clone/ - From the Odin Project Curriculum.
 ***
-
-The design teardown page was sized to a viewport size for a laptop 1440 X 900.
-
-The project did not require responsivness and the page was not designed responsive.
-
 
 ### Authors
  - Github:[Romel4321](https://github.com/Romel4321)

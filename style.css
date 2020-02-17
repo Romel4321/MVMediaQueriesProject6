@@ -140,6 +140,13 @@ table {
 /* #endregion Default Resets */
 
 /* #region  Global Variables */
+:root {
+  --main-bg-color: rgb(255, 68, 34);
+  --second-bg-color: #feecea;
+  --footer-color: #141414;
+  --main-font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+  --main-line-height: 22.5px;
+}
 
 /* #endregion Global Variables */
 
@@ -160,6 +167,18 @@ table {
 /* #endregion Layout Rules */
 
 /* #region  Module Rules */
+
+/* #region  Navbar */
+
+.a-nav-break {
+  background-color: #9d9d9c;
+}
+
+.a_navbar_sec-list {
+  display: inline-block;
+}
+
+/* #endregion Navbar */
 
 /* #endregion Module Rules */
 
