@@ -310,11 +310,12 @@ a {
 .m_three_images_one {
   padding: 4px;
   position: relative;
-  width: 100%;
-  height: 630px;
-  background-image: url(Assets/m_three_images\ three_im.jpg);
+  max-width: 100%;
+  height: 60vh;
+  background-image: url(Assets/1-10-796x417.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .cover_one {
@@ -339,8 +340,9 @@ a {
   z-index: 10;
 }
 
-.cover-date {
+.cover_date {
   color: #fff;
+  font-size: 0.6rem;
   position: absolute;
   top: 20px;
   right: 24px;
@@ -350,12 +352,11 @@ a {
 .text_block_one {
   position: absolute;
   left: 0;
-  top: 78%;
   color: white;
   padding-left: 20px;
   padding-right: 20px;
-  top: 426px;
-  font-size: 3rem;
+  top: 362px;
+  font-size: xx-large;
   font-weight: 700;
   font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
 }
@@ -365,14 +366,15 @@ a {
 }
 
 .tech_date {
-  font-size: 0.7rem;
-  padding-top: 20px;
+  font-size: 0.6rem;
+  padding-top: 12px;
 }
 
 .m_three_images_two {
   background:  linear-gradient(to right bottom, rgb(247, 88, 88) 18%, transparent, rgb(10, 10, 10) 90%), url(Assets/0567_BF2_5846.jpg);
-  background-position: 50%;
-  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   font-size: 1em;
   grid-column: 2 / span 1;
@@ -384,21 +386,20 @@ a {
 .text_block_two {
   position: absolute;
   color: white;
-  font-size: x-large;
+  font-size: medium;
   padding-left: 20px;
   padding-right: 20px;
-  top: 146px;
-  line-height: 1.3;
+  top: 191px;
   font-weight: 700;
   font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
 }
 
 .m_three_images_three {
   background:  linear-gradient(to right bottom, rgb(247, 88, 88) 18%, transparent, rgb(10, 10, 10) 90%), url(Assets/bitcoin_today-header_bitcoin_today-512x270.jpg);
-  background-position: 50%;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  font-size: 1em;
+  max-width: 100%;
+  background-size: 100% 100%;font-size: 1em;
   grid-column: 2 / span 1;
   grid-row: 2 / span 1;
   position: relative;
@@ -407,10 +408,10 @@ a {
 .text_block_three {
   position: absolute;
   color: white;
-  font-size: x-large;
+  font-size: medium;
   padding-left: 20px;
   padding-right: 20px;
-  top: 145px;
+  top: 127px;
   line-height: 1.3;
   font-weight: 700;
   font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
@@ -476,7 +477,7 @@ grid-template-rows: repeat(3,100px);
 
 /* #region  Middle Box */
 .o_middle_box{
-  height:800px; sdcsdcsd
+  height:800px; 
 }
 
 
@@ -654,12 +655,15 @@ grid-template-rows: repeat(3,100px);
     display: none;
   }
 
-  .a_three_images_logo {
+  .a_three_images_logo,
+  .cover_date {
     display: none;
   }
 
   .text_block_one {
-    top: 321px;
+    top: 359px;
+    font-size: 1.7em;
+    line-height: 1;
   }
 
   .text_block_two a {
@@ -669,8 +673,13 @@ grid-template-rows: repeat(3,100px);
 
  .text_block_three {
   top: 167px;
-  line-height: 1;
-  font-size: 1em;
+    line-height: 1;
+    font-size: 0.8em;
+ }
+
+ .tech_date {
+   padding-top: 16px;
+   font-size: 0.5em;
  }
 
   .menu {
@@ -722,23 +731,26 @@ grid-template-rows: repeat(3,100px);
 
   .o_three_images {
     grid-template-columns: 1fr;
-    grid-template-rows: minmax(0%, 100%) minmax(0%, 100%) minmax(0%, 100%);
+    grid-template-rows: 240px 240px 240px;
+    grid-row-gap: 20px;
 }
 
  .m_three_images_one {
   font-size: 1em;
   grid-column: 1;
   grid-row: 1;
-  min-height: 200px;
-  margin-bottom: 10px;
+  max-height: 250px;
+  margin-bottom: 0;
 }
 
 .text_block_one {
-  top: 295px;
+  top: 148px;
+  font-size: medium;
 }
 
-.cover_date {
-  display: none;
+.text_block_one h4,
+.text_block_three h4 {
+  font-size: x-small;
 }
 
 .tech_date {
@@ -746,17 +758,16 @@ grid-template-rows: repeat(3,100px);
 }
 
 .m_three_images_two {
-  font-size: 1em;
+font-size: 1em;
 grid-column: 1;
 grid-row: 2;
 margin-bottom: 0;
-margin-bottom: 10px;
+max-height: 250px;
 }
 
 .text_block_two {
-  left: 15px;
-    top: 445px;
-    font-size: 0.9em;
+  top: 165px;
+  font-size: x-large;
 }
 
 .m_three_images_three {
@@ -764,13 +775,13 @@ margin-bottom: 10px;
   grid-column: 1;
   grid-row: 3;
   margin-bottom: 0;
-  margin-bottom: 10px;
+  max-height: 250px;
 }
 
-.text-block_three {
-  left: 18px;
-  top: 639px;
-  font-size: 0.9em;
+.text_block_three {
+  top: 132px;
+  line-height: 1;
+  font-size: medium;
 }
 
 .tech_date {
