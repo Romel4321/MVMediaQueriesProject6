@@ -468,12 +468,10 @@ a {
 .o_middle_box {
   font-size: 1rem;
   text-align: end;
-  margin-bottom: 60px;
   width: 79%;
   height: 800px;
   box-sizing: border-box;
   margin-left: 10%;
-  padding-bottom: 120px;
 }
 
 .m_middlebox_title {
@@ -645,7 +643,160 @@ a {
 
 /* #endregion Middle Box */
 
+
+/* #region  Large Cards */
+
+.o_large_cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  box-sizing: border-box;
+  gap: 20px;
+  justify-items: center;
+  margin: auto 10%;
+  max-width: 90%;
+  padding: 30px 20px;   
+}
+
+ .m_container {
+    height: 750px;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  
+  .m_container_bgimage {
+    position: relative;
+    max-width: inherit;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .a_container_bgimage {
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+    object-position: right top;
+    background: transparent url(../img/image-gradient.png) no-repeat;
+    background-size: 100% 100%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }  
+  
+    .lge_cards_title {
+      color: red;
+      font-size: 1.1em;
+      font-weight: 900;
+      font-family: sans-serif;
+      margin-bottom: 20px;
+      position: absolute;
+      top: -45px;
+  }
+  
+    .img_textarea {
+      color: white;
+      position: absolute;
+      top: 172px;
+      line-height: 20px;
+      left: 20px;
+      font-family: sans-serif;
+  }
+  
+    .a_lge_one {
+      font-size: 0.8rem;
+      font-family: sans-serif;
+  }
+  
+    .a_lge_two {
+      font-size: 1.2rem;
+      font-weight: 900;
+      margin-bottom: 5px;
+      font-family: sans-serif;
+  }
+  
+    .a_lge_three {
+      font-size: 0.8rem;
+      word-spacing: 0.2rem;
+  }
+  
+    .text_block {
+      height: auto;
+      max-width: 100%;
+      display: grid;
+      grid-template-columns: 65% auto;
+      grid-template-rows: 1fr;
+      grid-template-areas: "textblock image-a";
+      background-color: white;
+      padding-left: 20px;
+      color: red;
+      font-size: 1.5rem;
+      line-height: 1em;
+      position: absolute;
+      top: 295px;
+  }
+  
+    .text_block_sideimg {
+      width: 100%;
+      height: 80px;
+      object-fit: cover;
+      object-position: top right;
+      border: 1px solid black;
+  }
+  
+    .my_img_side {
+      grid-area: image-a;
+  }
+  
+    .my_text_side {
+      grid-area: textblock;
+      font-size: 0.5em;
+  }
+  
+    .my_text_side_line1 {
+      line-height: 1.4rem;
+      grid-area: textblock;
+      font-size: 0.5em;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+    .my_text_side_line2 {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.2rem;
+      grid-area: textblock;
+      font-size: 0.8em;
+  }
+  
+    .m_large_cards_list {
+      margin-left: 15px;
+      padding-top: 394px;
+  }
+  
+    .m_large_cards_list > li {
+      border-bottom: 1px solid red;
+      padding: 0.5rem;
+      color: dimgray;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      font-size: 0.8rem;
+      font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+      line-height: 1rem;
+  }
+  
+    .m_large_cards_list li::before {
+      content: "\2022";
+      color: red;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+  }
+
+/* #endregion  Large Cards */
+
 /* #region Latest Deals */
+
 .o_latest_deals {
   margin-right: 1em;
   margin-left: 1em;
@@ -1177,7 +1328,8 @@ b {
 
   /* #endregion Latest News tablet size */
 
-  .o_middle_box {
+  .o_middle_box,
+  .o_large_cards {
     margin-left: 10px;
     width: 97%;
     min-width: 97%;
@@ -1216,6 +1368,14 @@ b {
     min-width: 93%;
     margin-left: 3%;
   }
+
+  .o_large_cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    box-sizing: border-box;
+    gap: 20px;
+ }
 
   /* #region  Latest Deals-Tablet Size */
 
@@ -1329,13 +1489,15 @@ b {
 
   .m_middlebox_large_flex_wrap,
   .m_middlebox_title_left,
-  .m_middlebox_right {
+  .m_middlebox_right,
+  .o_large_cards {
     padding-left: 0;
     margin-left: 3px;
     max-width: 100%;
   }
 
-  .m_middlebox_large_flex_wrap {
+  .m_middlebox_large_flex_wrap,
+  .o_large_cards {
     display: grid;
     grid-template-columns: 100%;
     grid-auto-rows: auto;
