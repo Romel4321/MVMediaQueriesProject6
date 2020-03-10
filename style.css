@@ -213,6 +213,7 @@ header {
 
 a {
   text-decoration: none;
+  color: whitesmoke;
 }
 
 .black {
@@ -645,7 +646,6 @@ a {
 
 /* #endregion Middle Box */
 
-
 /* #region  Large Cards */
 
 .o_large_cards {
@@ -657,144 +657,143 @@ a {
   justify-items: center;
   margin: auto 10%;
   max-width: 90%;
-  padding: 30px 20px;   
+  padding: 30px 20px;
 }
 
- .m_container {
-    height: 750px;
-    position: relative;
-    margin-bottom: 50px;
-  }
-  
-  .m_container_bgimage {
-    position: relative;
-    max-width: inherit;
-    height: auto;
-    object-fit: cover;
-  }
-  
-  .a_container_bgimage {
-    width: 100%;
-    height: 290px;
-    object-fit: cover;
-    object-position: right top;
-    background: transparent url(../img/image-gradient.png) no-repeat;
-    background-size: 100% 100%;
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    top: 0;
-    right: 0;
-  }  
-  
-    .lge_cards_title {
-      color: red;
-      font-size: 1.1em;
-      font-weight: 900;
-      font-family: sans-serif;
-      margin-bottom: 20px;
-      position: absolute;
-      top: -45px;
-  }
-  
-    .img_textarea {
-      color: white;
-      position: absolute;
-      top: 172px;
-      line-height: 20px;
-      left: 20px;
-      font-family: sans-serif;
-  }
-  
-    .a_lge_one {
-      font-size: 0.8rem;
-      font-family: sans-serif;
-  }
-  
-    .a_lge_two {
-      font-size: 1.2rem;
-      font-weight: 900;
-      margin-bottom: 5px;
-      font-family: sans-serif;
-  }
-  
-    .a_lge_three {
-      font-size: 0.8rem;
-      word-spacing: 0.2rem;
-  }
-  
-    .text_block {
-      height: auto;
-      max-width: 100%;
-      display: grid;
-      grid-template-columns: 65% auto;
-      grid-template-rows: 1fr;
-      grid-template-areas: "textblock image-a";
-      background-color: white;
-      padding-left: 20px;
-      color: red;
-      font-size: 1.5rem;
-      line-height: 1em;
-      position: absolute;
-      top: 295px;
-  }
-  
-    .text_block_sideimg {
-      width: 100%;
-      height: 107px;
-      object-fit: cover;
-      object-position: 21% 50%;
-      border: 1px solid gray;
-  }
-  
-  
-    .my_img_side {
-      grid-area: image-a;
-  }
-  
-    .my_text_side {
-      grid-area: textblock;
-      font-size: 0.5em;
-  }
-  
-    .my_text_side_line1 {
-      line-height: 1.4rem;
-      grid-area: textblock;
-      font-size: 0.5em;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
-    .my_text_side_line2 {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      line-height: 1.2rem;
-      grid-area: textblock;
-      font-size: 0.8em;
-  }
-  
-    .m_large_cards_list {
-      margin-left: 15px;
-      padding-top: 394px;
-  }
-  
-    .m_large_cards_list > li {
-      border-bottom: 1px solid red;
-      padding: 0.5rem;
-      color: dimgray;
-      padding-top: 15px;
-      padding-bottom: 15px;
-      font-size: 0.8rem;
-      font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
-      line-height: 1rem;
-  }
-  
-    .m_large_cards_list li::before {
-      content: "\2022";
-      color: red;
-      font-weight: bold;
-      display: inline-block;
-      width: 1em;
-      margin-left: -1em;
-  }
+.m_container {
+  height: 750px;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.m_container_bgimage {
+  position: relative;
+  max-width: inherit;
+  height: auto;
+  object-fit: cover;
+}
+
+.a_container_bgimage {
+  width: 100%;
+  height: 290px;
+  object-fit: cover;
+  object-position: right top;
+  background: transparent url(../img/image-gradient.png) no-repeat;
+  background-size: 100% 100%;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.lge_cards_title {
+  color: red;
+  font-size: 1.1em;
+  font-weight: 900;
+  font-family: sans-serif;
+  margin-bottom: 20px;
+  position: absolute;
+  top: -45px;
+}
+
+.img_textarea {
+  color: white;
+  position: absolute;
+  top: 172px;
+  line-height: 20px;
+  left: 20px;
+  font-family: sans-serif;
+}
+
+.a_lge_one {
+  font-size: 0.8rem;
+  font-family: sans-serif;
+}
+
+.a_lge_two {
+  font-size: 1.2rem;
+  font-weight: 900;
+  margin-bottom: 5px;
+  font-family: sans-serif;
+}
+
+.a_lge_three {
+  font-size: 0.8rem;
+  word-spacing: 0.2rem;
+}
+
+.text_block {
+  height: auto;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 65% auto;
+  grid-template-rows: 1fr;
+  grid-template-areas: "textblock image-a";
+  background-color: white;
+  padding-left: 20px;
+  color: red;
+  font-size: 1.5rem;
+  line-height: 1em;
+  position: absolute;
+  top: 295px;
+}
+
+.text_block_sideimg {
+  width: 100%;
+  height: 107px;
+  object-fit: cover;
+  object-position: 21% 50%;
+  border: 1px solid gray;
+}
+
+.my_img_side {
+  grid-area: image-a;
+}
+
+.my_text_side {
+  grid-area: textblock;
+  font-size: 0.5em;
+}
+
+.my_text_side_line1 {
+  line-height: 1.4rem;
+  grid-area: textblock;
+  font-size: 0.5em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.my_text_side_line2 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.2rem;
+  grid-area: textblock;
+  font-size: 0.8em;
+}
+
+.m_large_cards_list {
+  margin-left: 15px;
+  padding-top: 394px;
+}
+
+.m_large_cards_list > li {
+  border-bottom: 1px solid red;
+  padding: 0.5rem;
+  color: dimgray;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 0.8rem;
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+  line-height: 1rem;
+}
+
+.m_large_cards_list li::before {
+  content: "\2022";
+  color: red;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
 
 /* #endregion  Large Cards */
 
@@ -818,12 +817,9 @@ a {
 }
 
 .m_latest_deals_text_wrap {
-  max-width: 100%;
+  min-width: 100%;
   grid-area: head;
   display: flex;
-  justify-content: space-between;
-  align-content: stretch;
-  align-items: center;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -831,10 +827,12 @@ a {
   flex: 2;
   color: red;
   font-size: 1.5em;
+  margin-left: 0;
 }
 
 .m_latest_deals_text_wrap > div {
   flex: 1;
+  text-align: center;
 }
 
 .m_latest_deals_text_wrap > h3 {
@@ -956,17 +954,24 @@ footer {
   padding: 12px;
 }
 
+.social_icons > i {
+  background: #333;
+  border-radius: 50%;
+  display: block;
+  height: 35px;
+  padding: 10px;
+  text-align: center;
+  width: 35px;
+  cursor: pointer;
+  border: 1px solid #011;
+}
+
 .social_icons i:hover {
   background-color: #141414;
 }
 
 .foot_menu {
   padding: 12px;
-}
-
-a {
-  text-decoration: none;
-  color: whitesmoke;
 }
 
 .footer_top {
@@ -983,18 +988,6 @@ a {
   flex-direction: row;
   justify-content: center;
   font-size: 0.9em;
-}
-
-.social_icons > i {
-  background: #333;
-  border-radius: 50%;
-  display: block;
-  height: 35px;
-  padding: 10px;
-  text-align: center;
-  width: 35px;
-  cursor: pointer;
-  border: 1px solid #011;
 }
 
 .footer_bottom {
@@ -1019,7 +1012,6 @@ b {
 /* #region  Media Queries */
 
 @media only screen and (min-width: 1024px) {
-  
   .logo_tablet {
     display: none;
     visibility: hidden;
@@ -1036,7 +1028,6 @@ b {
 }
 
 @media only screen and (min-width: 769px) {
-  
   .o_navbar_black {
     background-color: black;
     width: 100%;
@@ -1143,10 +1134,30 @@ b {
     word-spacing: 4px;
     margin-bottom: 3px;
   }
+
+  .text_block_one {
+    top: 400px;
+    font-size: 1.7em;
+    line-height: 1;
+  }
+
+  .text_block_two {
+    top: 300px;
+  }
+
+  .text_block_two a {
+    line-height: 1;
+    font-size: 0.6em;
+  }
+
+  .text_block_three {
+    top: -60px;
+    line-height: 1;
+    font-size: 0.8em;
+  }
 }
 
 @media only screen and (max-width: 768px) {
-  
   .logo_mobile {
     visibility: hidden;
   }
@@ -1168,9 +1179,13 @@ b {
   }
 
   .text_block_one {
-    top: 359px;
+    top: 480px;
     font-size: 1.7em;
     line-height: 1;
+  }
+
+  .text_block_two {
+    top: 370px;
   }
 
   .text_block_two a {
@@ -1179,7 +1194,7 @@ b {
   }
 
   .text_block_three {
-    top: 167px;
+    top: -90px;
     line-height: 1;
     font-size: 0.8em;
   }
@@ -1357,8 +1372,8 @@ b {
   }
 
   .m_latest_deals_text_wrap {
-    min-width: 93%;
-    margin-left: 3%;
+    min-width: 100%;
+    margin-left: 0%;
   }
 
   .o_large_cards {
@@ -1367,7 +1382,7 @@ b {
     grid-auto-rows: auto;
     box-sizing: border-box;
     gap: 20px;
- }
+  }
 
   /* #region  Latest Deals-Tablet Size */
 
@@ -1386,7 +1401,6 @@ b {
 }
 
 @media only screen and (max-width: 320px) {
-  
   .logo_tablet {
     display: none;
   }
@@ -1684,6 +1698,10 @@ b {
       "sixth"
       "seventh"
       "eighth";
+  }
+
+  .mobile_head > h2 {
+    margin-left: 0;
   }
 
   .mobile_resizer {
