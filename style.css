@@ -270,6 +270,8 @@ a {
 .yellow {
   background-color: yellow;
   height: 30px;
+  display: flex;
+  align-items: center;
 }
 
 .yellow a {
@@ -469,7 +471,7 @@ a {
   font-size: 1rem;
   text-align: end;
   width: 79%;
-  height: 800px;
+  height: 500px;
   box-sizing: border-box;
   margin-left: 10%;
 }
@@ -739,11 +741,12 @@ a {
   
     .text_block_sideimg {
       width: 100%;
-      height: 80px;
+      height: 107px;
       object-fit: cover;
-      object-position: top right;
-      border: 1px solid black;
+      object-position: 21% 50%;
+      border: 1px solid gray;
   }
+  
   
     .my_img_side {
       grid-area: image-a;
@@ -1016,10 +1019,7 @@ b {
 /* #region  Media Queries */
 
 @media only screen and (min-width: 1024px) {
-  body {
-    background-color: lightgreen;
-  }
-
+  
   .logo_tablet {
     display: none;
     visibility: hidden;
@@ -1036,10 +1036,7 @@ b {
 }
 
 @media only screen and (min-width: 769px) {
-  body {
-    background-color: purple;
-  }
-
+  
   .o_navbar_black {
     background-color: black;
     width: 100%;
@@ -1064,7 +1061,7 @@ b {
     margin-right: 8em;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 2em, 1fr;
+    grid-template-rows: 2em 1fr;
     grid-template-areas:
       "header header header header"
       "cardone cardtwo cardthree cardfour "
@@ -1073,10 +1070,9 @@ b {
     grid-column-gap: 2.5em;
   }
 
-  .o_latest_news h1 {
+  .o_latest_news_grid h2 {
     max-width: 100%;
     height: auto;
-    margin-left: auto;
     margin-right: auto;
     color: red;
     font-size: 1.5em;
@@ -1120,8 +1116,7 @@ b {
   .a_latest_news_card > img {
     width: 100%;
     max-width: 100%;
-    min-height: auto-fit;
-    max-height: 155px;
+    max-height: 127px;
   }
 
   .a_latest_text {
@@ -1151,10 +1146,7 @@ b {
 }
 
 @media only screen and (max-width: 768px) {
-  body {
-    background-color: pink;
-  }
-
+  
   .logo_mobile {
     visibility: hidden;
   }
@@ -1222,7 +1214,7 @@ b {
     display: grid;
     margin-right: auto;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 2em, 1fr, 1fr 1fr;
+    grid-template-rows: 2em 1fr 1fr 1fr;
     grid-template-areas:
       "header header header"
       "cardone cardtwo cardthree "
@@ -1245,10 +1237,9 @@ b {
     height: auto;
   }
 
-  .o_latest_news h1 {
+  .o_latest_news_grid h2 {
     max-width: 100%;
     height: auto;
-    margin-left: auto;
     margin-right: auto;
     color: red;
     font-size: 1.5em;
@@ -1342,6 +1333,7 @@ b {
     box-sizing: border-box;
     gap: 20px;
     padding: 0 10px;
+    margin-bottom: 50px;
   }
 
   .m_middlebox_title {
@@ -1394,10 +1386,7 @@ b {
 }
 
 @media only screen and (max-width: 320px) {
-  body {
-    background-color: lightblue;
-  }
-
+  
   .logo_tablet {
     display: none;
   }
@@ -1483,7 +1472,7 @@ b {
   }
 
   .o_middle_box {
-    margin-bottom: 295px;
+    margin-bottom: 660px;
     margin-left: 3px;
   }
 
@@ -1546,7 +1535,7 @@ b {
     margin-top: 1.2em;
     margin-right: auto;
     grid-template-columns: 1fr;
-    grid-template-rows: 2em, 1fr, 1fr 1fr 1fr 1fr 1fr 1fr  1fr;
+    grid-template-rows: 2em 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
       "header"
       "cardone"
@@ -1559,7 +1548,7 @@ b {
       "cardeight";
   }
 
-  .o_latest_news_grid > h1 {
+  .o_latest_news_grid > h2 {
     color: red;
     justify-self: start;
   }
@@ -1576,10 +1565,9 @@ b {
     height: auto;
   }
 
-  .o_latest_news h1 {
+  .o_latest_news_grid h2 {
     max-width: 100%;
     height: auto;
-    margin-left: auto;
     margin-right: auto;
     color: red;
     font-size: 1.5em;
@@ -1636,7 +1624,7 @@ b {
   .a_latest_text-one {
     line-height: 1em;
     color: grey;
-    word-spacing: u2px;
+    word-spacing: 2px;
     font-size: 0.6em;
     margin-top: 5px;
     margin-bottom: 0;
