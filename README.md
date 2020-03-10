@@ -16,7 +16,7 @@ The screen sizes used were the default responive screen sizes as taken from goog
 
 Mobile S 320 X 708 (Portrait Mode)
 Tablet 768  X 708 (Portrait Mode)
-Laptop 1024 X 708 (Portrait Mode)
+Laptop 1440 X 708 (Portrait Mode)
  
 ## BUILT WITH
 *  HTML 5
@@ -29,7 +29,7 @@ Laptop 1024 X 708 (Portrait Mode)
 https://thenextweb.com/
 
 ### Live Demo 
- [Smashing-Magazine-Clone] https://laguna1.github.io/Smashing-Magazine-Clone/ - From the Odin Project Curriculum.
+ [The-Next-Web-Clone] https://rawcdn.githack.com/Romel4321/MVMediaQueriesProject6/3947124ddc6d4067b74a993a437dc4bc06046f12/index.html - From the Odin Project Curriculum.
 ***
 
 ### Authors
