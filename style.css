@@ -194,21 +194,20 @@ header {
   height: 52px;
 }
 
-.logo_tablet > img {
-  height: 77px;
-  width: 120px;
+.logo_tablet img {
+  height: 79px;
+  width: 103px;
 }
 
 .logo_mobile {
   position: absolute;
-  background-color: orange;
   top: 0;
   left: 0;
 }
 
-.logo_mobile > img {
-  width: 63px;
-  height: 37px;
+.logo_mobile img {
+  width: 80px;
+  height: 40px;
 }
 
 a {
@@ -235,7 +234,7 @@ a {
 }
 
 .black_center {
-  width: 125px;
+  width: 400px;
 }
 
 .black_right {
@@ -248,9 +247,11 @@ a {
   align-items: center;
 }
 
-.black_left > a,
-.black_right > a {
+.black_left a, 
+.black_right a {
   color: white;
+  margin-left: 20px;
+  font-size: xx-small;
 }
 
 .white {
@@ -265,7 +266,15 @@ a {
 }
 
 .awb {
-  color: black;
+  color: gray;
+  font-size: x-small;
+}
+
+.awb_search i {
+  position: absolute;
+  right: 20px;
+  top: 52px;
+  color: gray;
 }
 
 .yellow {
@@ -1164,14 +1173,21 @@ b {
 
   .black,
   .white {
-    padding-left: 130px;
-    font-size: 0.6em;
+    padding-left: 99px;
+    font-size: 0.67em;
   }
 
-  .black_right,
+  .black_center,
   .awb-1 {
     display: none;
   }
+
+  .black_left a, 
+  .black_right a {
+    color: whitesmoke;
+    margin-left: 16px;
+    font-size: 0.9em;
+}
 
   .a_three_images_logo,
   .cover_date {
@@ -1420,9 +1436,19 @@ b {
     height: 40px;
   }
 
+  .search i {
+    position: absolute;
+    right: 80px;
+    top: 15px;
+    color: gray;
+  }
+
   .menu {
     visibility: visible;
     color: red;
+    position: absolute;
+    top: 15px;
+    right: 27px;
   }
 
   .yellow a {
