@@ -247,8 +247,8 @@ a {
   align-items: center;
 }
 
-.black_left a, 
-.black_right a {
+.black_left > a, 
+.black_right > a {
   color: white;
   margin-left: 20px;
   font-size: xx-small;
@@ -1182,12 +1182,12 @@ b {
     display: none;
   }
 
-  .black_left a, 
-  .black_right a {
+  .black_left > a, 
+  .black_right > a {
     color: whitesmoke;
     margin-left: 16px;
     font-size: 0.9em;
-}
+  }
 
   .a_three_images_logo,
   .cover_date {
