@@ -29,7 +29,7 @@ Laptop 1440 X 708 (Portrait Mode)
 https://thenextweb.com/
 
 ### Live Demo 
- [The-Next-Web-Clone] (https://rawcdn.githack.com/Romel4321/MVMediaQueriesProject6/b89073cf488bc8ff7e01168f9051a15aac99ad87/index.html) - From the Odin Project Curriculum.
+ [The-Next-Web-Clone](https://rawcdn.githack.com/Romel4321/MVMediaQueriesProject6/b89073cf488bc8ff7e01168f9051a15aac99ad87/index.html) - From the Odin Project Curriculum.
 ***
 
 ### Authors
