@@ -22,7 +22,7 @@ Laptop 1440 X 708 (Portrait Mode)
 *  HTML 5
 *  CSS 4
 ***
- ![Example](https://thenextweb.com/)
+ ![Example](https://rawcdn.githack.com/Romel4321/MVMediaQueriesProject6/912b5d99e3b2dd496ab731b11a710f88ae5cb5f0/Assets/Laptop%201024%20X%20708.png)
  
  
 ### Sample Page
